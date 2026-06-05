@@ -1,21 +1,14 @@
 ---
-title: "NestJS DevTools Changelog"
+title: "NestJS DevTools Extension Version History and Releases"
 sidebarTitle: "Changelog"
-description: "Version history and release notes for the NestJS DevTools VS Code extension."
+description: "Track every release of the NestJS DevTools VS Code extension — what changed, what shipped, and what is planned for future versions."
 ---
 
 This page tracks all notable changes to NestJS DevTools, following the [Keep a Changelog](https://keepachangelog.com/) format. Each release section lists what was added, changed, or fixed, so you can quickly understand what shipped and when.
 
 ## v0.0.2 — Current
 
-**Initial public release.**
-
-- **Logger Helper** — insert `this.logger.debug()`, `.log()`, `.warn()`, `.error()`, or `.verbose()` statements with a single keyboard chord. Each statement automatically includes the enclosing class name so log output is always traceable to its source.
-- **Block-aware insertion** — when the cursor is on a line that ends with `{` (such as the opening of a method call or object literal), the logger statement is placed after the closing `}`, never inside the block, preventing syntax errors.
-- **Module File Searcher** — from any TypeScript file inside a module, open an instant quick-pick listing every `.ts` file in that module's folder and subdirectories, grouped by category, with single-keystroke shortcut navigation.
-- **Browse All Modules** — a workspace-wide module picker (`*.module.ts` files) that lets you jump to any module and immediately browse its files using the same grouped, shortcut-driven interface.
-- **18 recognised NestJS file types** across 6 categories: Core NestJS (service, controller, module, guard, gateway, interceptor, pipe, filter, resolver, decorator), Entities, DTOs, Enums, Interfaces, and Repositories/Middleware/Strategies/Tests.
-- **7 VS Code commands** with full keyboard chord support (`Cmd/Ctrl+L` as the leader key), all customisable via **Preferences: Open Keyboard Shortcuts**.
+Initial release.
 
 <Note>
   For the latest changes and release assets, see the [GitHub releases page](https://github.com/pouryazardosht/nestjs-devtools/releases).

@@ -55,13 +55,13 @@ Files are grouped in the following order, matching the `categoryOrder` defined i
 | Other        | Strategy    | 🧠    | ST       |
 | Other        | Test        | 🧪    | T        |
 
-Each file type is matched by its filename suffix (e.g. `.service.ts`, `.guard.ts`, `.dto.ts`). Plural variants — such as `.guards.ts` or `.strategies.ts` — are also recognised for types that commonly appear in that form.
+Each file type is matched by its filename suffix (e.g. `.service.ts`, `.guard.ts`, `.dto.ts`). Plural variants are also recognised for the following types that commonly appear in that form: `guard`, `gateway`, `interceptor`, `pipe`, `filter`, `decorator`, `resolver`, `middleware`, and `strategy` — so `.guards.ts`, `.interceptors.ts`, `.strategies.ts`, and similar are matched correctly.
 
 ## Instant shortcuts
 
 Each file entry in the quick-pick shows its shortcut letter in the description:
 
-```
+```text
 🛠️  user.service.ts          Service (S)  |  src/users/user.service.ts
 🎮  users.controller.ts      Controller (C)  |  src/users/users.controller.ts
 📦  users.module.ts          Module (M)  |  src/users/users.module.ts

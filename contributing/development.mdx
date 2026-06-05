@@ -1,7 +1,7 @@
 ---
-title: "Develop and Contribute to NestJS DevTools"
+title: "Develop and Contribute to NestJS DevTools Extension"
 sidebarTitle: "Development"
-description: "Set up the NestJS DevTools VS Code extension locally, run it in development mode, and submit contributions via pull request."
+description: "Learn how to clone, build, and run the NestJS DevTools VS Code extension locally, understand its project structure, and open a pull request."
 ---
 
 NestJS DevTools is an open-source VS Code extension — contributions of all sizes are welcome. This guide walks you through cloning the repository, understanding the project layout, running the extension locally, and opening a pull request. The codebase is intentionally small and well-structured, so getting oriented takes only a few minutes.
@@ -71,9 +71,13 @@ nestjs-devtools/
 
 | Script | Command | What it does |
 |--------|---------|--------------|
+| Pre-publish | `npm run vscode:prepublish` | Runs `package` automatically before publishing to the VS Code Marketplace |
 | Compile (dev) | `npm run compile` | Runs webpack in development mode — fast, with source maps |
 | Watch | `npm run watch` | Watches `src/` for changes and recompiles automatically |
 | Package (prod) | `npm run package` | Production webpack build with hidden source maps, ready for publishing |
+| Compile tests | `npm run compile-tests` | Compiles the test suite with `tsc` into the `out/` directory |
+| Watch tests | `npm run watch-tests` | Watches and recompiles the test suite on every change |
+| Pre-test | `npm run pretest` | Runs `compile-tests`, `compile`, and `lint` automatically before each test run |
 | Lint | `npm run lint` | Runs ESLint over `src/` using the TypeScript-ESLint ruleset |
 | Test | `npm run test` | Runs the VS Code extension test suite via `vscode-test` |
 
